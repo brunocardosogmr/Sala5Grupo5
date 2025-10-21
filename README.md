@@ -52,6 +52,3 @@ O desenvolvimento seguiu práticas colaborativas, incluindo:
 ---
 
 *Projeto desenvolvido pelo grupo Sala5Grupo5 — Outubro 2025*
-
-
-teste
