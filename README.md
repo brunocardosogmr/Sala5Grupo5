@@ -1,41 +1,54 @@
-🧮 Projeto Calculadora
-📖 Apresentação
+# Projeto: Atividade Assíncrona em Grupo
 
-Este projeto foi desenvolvido como parte de um trabalho académico.
-O objetivo é implementar uma calculadora simples em código e apresentar um relatório em texto descrevendo o seu funcionamento, estrutura e lógica.
+**Grupo:** Sala5Grupo5  
+**Data:** Outubro 2025
 
-👥 Elementos do Grupo
+## Sobre
 
-Bruno
+Este projeto foi desenvolvido em Python por membros do grupo Sala5Grupo5, com o objetivo de praticar colaboração utilizando Git e GitHub. O projeto é composto por três módulos principais.
 
-Filipe
+## Estrutura
 
-Afonso
+```
+Sala5Grupo5/
+├── src/
+│   ├── apresentacao.py    # Informações do grupo
+│   ├── relatorio.py       # Gerador de relatórios
+│   └── calculadora.py     # Calculadora básica
+├── main.py                # Arquivo principal
+└── README.md              # Este documento
+```
 
-💻 Código da Calculadora
+## Membros
 
-O código da calculadora encontra-se na pasta /src (ou no ficheiro calculadora.py, caso seja apenas um).
-Esta calculadora permite realizar as operações básicas:
+- Bruno
+- Filipe
+- Afonso
 
-Adição
+## Funcionalidades
 
-Subtração
+- **Apresentação do Grupo:** Exibe informações dos membros.
+- **Relatórios:** Gera relatórios das atividades do projeto.
+- **Calculadora:** Realiza operações matemáticas básicas.
 
-Multiplicação
+## Colaboração
 
-Divisão
+O desenvolvimento seguiu práticas colaborativas, incluindo:
 
-Para executar o programa:
+- Uso de **Git** para controle de versões.
+- Utilização do **GitHub** para hospedagem e colaboração.
+- Criação de **forks** para facilitar as configurações e contribuições.
+- Criação de **branches** individuais para cada membro.
+- Integração de alterações via **Pull Requests**.
 
-python calculadora.py
+## Objetivos Alcançados
 
+- ✅ Repositório criado no GitHub
+- ✅ Trabalho realizado em forks e branches separadas
+- ✅ Commits organizados
+- ✅ Integração de código por Pull Requests
+- ✅ Colaboração efetiva entre os membros
 
-⚙️ Tecnologias Utilizadas
+---
 
-Python 3
-
-(Outras ferramentas se aplicável)
-
-📅 Data
-
-Outubro de 2025
+*Projeto desenvolvido pelo grupo Sala5Grupo5 — Outubro 2025*
