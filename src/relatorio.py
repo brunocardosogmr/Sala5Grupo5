@@ -76,7 +76,7 @@ class GeradorRelatorio:
             percentagem = (concluidas / total) * 100
             print(f"Percentagem de conclusão: {percentagem:.1f}%")
 
-def main():
+def executar_modulo():
     relatorio = GeradorRelatorio()
     
     relatorio.adicionar_actividade("Criar repositório GitHub", "Membro 1", "Concluída")
@@ -87,6 +87,10 @@ def main():
     relatorio.gerar_relatorio_consola()
     relatorio.estatisticas()
     relatorio.gerar_relatorio_ficheiro()
+    return relatorio
+
+def main():
+    executar_modulo()
 
 if __name__ == "__main__":
     main()

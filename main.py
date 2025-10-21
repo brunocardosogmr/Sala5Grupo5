@@ -1,24 +1,12 @@
-"""
-Arquivo Principal do Projeto
-============================
-
-Este arquivo integra todos os módulos do projeto e serve como ponto de entrada.
-Responsável: [NOME DO MEMBRO - para ser preenchido na branch individual]
-
-Data: 21 de Outubro de 2025
-Projeto: Atividade Assíncrona Git/GitHub - Sala5Grupo5
-"""
-
 import sys
 import os
 
-# Adicionar o diretório src ao path para importar os módulos
 sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
 
 try:
-    from src.apresentacao import InfoGrupo
-    from src.relatorio import GeradorRelatorio
-    from src.calculadora import Calculadora
+    from src.apresentacao import executar_modulo as executar_apresentacao
+    from src.relatorio import executar_modulo as executar_relatorio  
+    from src.calculadora import executar_modulo as executar_calculadora, Calculadora
 except ImportError:
     print("Erro: Não foi possível importar todos os módulos.")
     print("Verifique se todos os ficheiros estão no directório src/")
@@ -27,9 +15,7 @@ except ImportError:
 class ProjectoGrupo:
     
     def __init__(self):
-        self.grupo = InfoGrupo()
-        self.relatorio = GeradorRelatorio()
-        self.calculadora = Calculadora()
+        pass
         
     def menu_principal(self):
         while True:
@@ -73,62 +59,28 @@ class ProjectoGrupo:
     
     def modulo_apresentacao(self):
         print("\n--- MÓDULO DE APRESENTAÇÃO ---")
-        self.grupo.apresentar_grupo()
+        executar_apresentacao()
         input("\nPressione Enter para continuar...")
     
     def modulo_relatorio(self):
         print("\n--- MÓDULO DE RELATÓRIOS ---")
-        
-        if not self.relatorio.actividades:
-            self.relatorio.adicionar_actividade("Criação do repositório", "Equipa", "Concluída")
-            self.relatorio.adicionar_actividade("Desenvolvimento dos módulos", "Todos os membros", "Em andamento")
-            self.relatorio.adicionar_actividade("Testes e integração", "Equipa", "Em andamento")
-        
-        while True:
-            print("\n1. Ver relatório na consola")
-            print("2. Gerar relatório em ficheiro")
-            print("3. Ver estatísticas")
-            print("4. Adicionar actividade")
-            print("0. Voltar ao menu principal")
-            
-            opcao = input("Escolha uma opção: ")
-            
-            if opcao == '0':
-                break
-            elif opcao == '1':
-                self.relatorio.gerar_relatorio_consola()
-            elif opcao == '2':
-                self.relatorio.gerar_relatorio_ficheiro()
-            elif opcao == '3':
-                self.relatorio.estatisticas()
-            elif opcao == '4':
-                desc = input("Descrição da actividade: ")
-                resp = input("Responsável: ")
-                estado = input("Estado (Em andamento/Concluída): ")
-                self.relatorio.adicionar_actividade(desc, resp, estado)
-            else:
-                print("Opção inválida!")
+        executar_relatorio()
+        input("\nPressione Enter para continuar...")
     
     def modulo_calculadora(self):
         print("\n--- MÓDULO CALCULADORA ---")
-        print("1. Usar calculadora interactiva")
-        print("2. Demonstração rápida")
+        print("1. Executar demonstração do módulo")
+        print("2. Usar calculadora interactiva")
         print("0. Voltar")
         
         opcao = input("Escolha uma opção: ")
         
         if opcao == '1':
-            self.calculadora.calculadora_interactiva()
-        elif opcao == '2':
-            print("\n=== DEMONSTRAÇÃO DA CALCULADORA ===")
-            print(f"5 + 3 = {self.calculadora.adicionar(5, 3)}")
-            print(f"10 - 4 = {self.calculadora.subtrair(10, 4)}")
-            print(f"6 × 7 = {self.calculadora.multiplicar(6, 7)}")
-            print(f"20 ÷ 4 = {self.calculadora.dividir(20, 4)}")
-            print(f"2^10 = {self.calculadora.potencia(2, 10)}")
-            print(f"√16 = {self.calculadora.raiz_quadrada(16)}")
-            self.calculadora.mostrar_historico()
+            executar_calculadora()
             input("\nPressione Enter para continuar...")
+        elif opcao == '2':
+            calc = Calculadora()
+            calc.calculadora_interactiva()
     
     def demonstracao_completa(self):
         print("\n" + "=" * 60)
@@ -136,25 +88,13 @@ class ProjectoGrupo:
         print("=" * 60)
         
         print("\n1. APRESENTAÇÃO DO GRUPO:")
-        self.grupo.apresentar_grupo()
+        executar_apresentacao()
         
         print("\n2. RELATÓRIO DO PROJECTO:")
-        if not self.relatorio.actividades:
-            self.relatorio.adicionar_actividade("Setup inicial do projecto", "Equipa", "Concluída")
-            self.relatorio.adicionar_actividade("Desenvolvimento módulo apresentação", "Membro 1", "Concluída")
-            self.relatorio.adicionar_actividade("Desenvolvimento módulo relatório", "Membro 2", "Concluída")
-            self.relatorio.adicionar_actividade("Desenvolvimento calculadora", "Membro 3", "Concluída")
-            self.relatorio.adicionar_actividade("Integração e testes", "Membro 4", "Em andamento")
-        
-        self.relatorio.gerar_relatorio_consola()
-        self.relatorio.estatisticas()
+        executar_relatorio()
         
         print("\n3. CALCULADORA:")
-        print("Operações de exemplo:")
-        print(f"100 + 50 = {self.calculadora.adicionar(100, 50)}")
-        print(f"200 - 75 = {self.calculadora.subtrair(200, 75)}")
-        print(f"12 × 8 = {self.calculadora.multiplicar(12, 8)}")
-        print(f"144 ÷ 12 = {self.calculadora.dividir(144, 12)}")
+        executar_calculadora()
         
         print("\n" + "=" * 60)
         print("DEMONSTRAÇÃO CONCLUÍDA COM SUCESSO!")

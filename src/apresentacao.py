@@ -32,14 +32,22 @@ class InfoGrupo:
         
         print("=" * 50)
 
-def main():
+def obter_membros_grupo():
     grupo = InfoGrupo()
     grupo.adicionar_membro("Filipe Braga", "Programação")
     # Cada membro deve descomentar e preencher uma linha abaixo na sua branch 
     grupo.adicionar_membro("Afonso Ramos", "Programação")
     grupo.adicionar_membro("Bruno", "Programação")
     
+    return grupo
+
+def executar_modulo():
+    grupo = obter_membros_grupo()
     grupo.apresentar_grupo()
+    return grupo
+
+def main():
+    executar_modulo()
 
 if __name__ == "__main__":
     main()
