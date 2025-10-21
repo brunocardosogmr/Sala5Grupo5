@@ -1,69 +1,41 @@
-# Projecto Actividade Assíncrona em Grupo
+🧮 Projeto Calculadora
+📖 Apresentação
 
-**Grupo:** Sala5Grupo5  
-**Disciplina:** [Nome da Disciplina]  
-**Data:** Outubro 2025
+Este projeto foi desenvolvido como parte de um trabalho académico.
+O objetivo é implementar uma calculadora simples em código e apresentar um relatório em texto descrevendo o seu funcionamento, estrutura e lógica.
 
-## Sobre o Projecto
+👥 Elementos do Grupo
 
-Este é um projecto Python simples desenvolvido em grupo para aprender a trabalhar colaborativamente com Git e GitHub. O projecto inclui três módulos que foram desenvolvidos por diferentes membros do grupo.
+Bruno
 
-## Estrutura do Projecto
+Filipe
 
-```
-Sala5Grupo5/
-├── src/
-│   ├── apresentacao.py    # Informações do grupo
-│   ├── relatorio.py       # Gerador de relatórios
-│   └── calculadora.py     # Calculadora básica
-├── main.py                # Ficheiro principal
-└── README.md              # Este ficheiro
-```
+Afonso
 
-## Membros do Grupo
+💻 Código da Calculadora
 
-- **Filipe Braga** - Responsável pelo módulo de apresentação
-- [Adicionar outros membros conforme necessário]
+O código da calculadora encontra-se na pasta /src (ou no ficheiro calculadora.py, caso seja apenas um).
+Esta calculadora permite realizar as operações básicas:
 
-## Como Executar
+Adição
 
-1. Certificar que tem Python 3 instalado
-2. Executar o programa principal:
-   ```bash
-   python3 main.py
-   ```
+Subtração
 
-## Funcionalidades
+Multiplicação
 
-- **Apresentação do Grupo**: Mostra informações sobre os membros
-- **Relatórios**: Gera relatórios das actividades do projecto
-- **Calculadora**: Operações matemáticas básicas
+Divisão
 
-## Distribuição de Tarefas
+Para executar o programa:
 
-Cada membro do grupo foi responsável por desenvolver um módulo específico:
+python calculadora.py
 
-- `apresentacao.py` - Informações e dados do grupo
-- `relatorio.py` - Sistema de relatórios de actividades
-- `calculadora.py` - Operações matemáticas
-- `main.py` - Integração de todos os módulos
 
-## Trabalho Colaborativo
+⚙️ Tecnologias Utilizadas
 
-Este projecto foi desenvolvido usando:
-- **Git** para controlo de versões
-- **GitHub** para colaboração
-- **Branches** individuais para cada membro
-- **Pull Requests** para integrar as alterações
+Python 3
 
-## Objectivos Cumpridos
+(Outras ferramentas se aplicável)
 
-- ✅ Criação de repositório GitHub
-- ✅ Trabalho em branches separadas
-- ✅ Commits organizados
-- ✅ Integração de código através de Pull Requests
-- ✅ Colaboração efectiva entre membros
+📅 Data
 
----
-
-*Trabalho desenvolvido pelo Sala5Grupo5 - Outubro 2025*
+Outubro de 2025
