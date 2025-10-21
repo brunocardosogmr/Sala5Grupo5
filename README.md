@@ -29,18 +29,6 @@ Para executar o programa:
 
 python calculadora.py
 
-📝 Relatório
-
-O relatório em texto encontra-se no ficheiro relatorio.txt (ou relatorio.pdf se for em formato PDF).
-Neste documento explicamos:
-
-A estrutura do código
-
-A lógica utilizada
-
-As principais funções e métodos
-
-Conclusões do projeto
 
 ⚙️ Tecnologias Utilizadas
 
