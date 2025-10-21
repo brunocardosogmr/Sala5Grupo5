@@ -148,7 +148,7 @@ class Calculadora:
             except Exception as e:
                 print(f"Erro inesperado: {e}")
 
-def main():
+def executar_modulo():
     calc = Calculadora()
     
     print("=== TESTE DA CALCULADORA ===")
@@ -161,6 +161,10 @@ def main():
     print(f"20% de 150 = {calc.percentagem(150, 20)}")
     
     calc.mostrar_historico()
+    return calc
+
+def main():
+    executar_modulo()
 
 if __name__ == "__main__":
     main()
