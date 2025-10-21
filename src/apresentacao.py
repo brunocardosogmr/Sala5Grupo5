@@ -36,7 +36,8 @@ def main():
     grupo = InfoGrupo()
     grupo.adicionar_membro("Filipe Braga", "Programação")
     # Cada membro deve descomentar e preencher uma linha abaixo na sua branch 
-    # grupo.adicionar_membro("Nome Membro x", "Programação")
+    grupo.adicionar_membro("Afonso Ramos", "Programação")
+    grupo.adicionar_membro("Bruno", "Programação")
     
     grupo.apresentar_grupo()
 
